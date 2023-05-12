@@ -1,0 +1,152 @@
+
+body {
+  background-image: url(image/48sv44jin6m71.gif);
+  background-size: cover;
+  scroll-behavior: smooth;
+  min-height: 1000px;
+  font-size: 16px;
+}
+
+.card-body {
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-image: url(image/48sv44jin6m71.gif);
+  animation: grow 1s ease-in-out both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title {
+  animation: blink 2s linear infinite;
+}
+
+@keyframes grow {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+img {
+  border-radius: 0%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+#nav-pills {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  z-index: 1;
+  background-color: #ffffff00;
+  padding: 10px;
+}
+
+#nav-fill {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#about-section {
+  height: 250px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: justify;
+}
+
+#works-section {
+  height: 500px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#message-section {
+  height: 500px;
+}
+
+.bg-image {
+  background-size: cover;
+  height: 70vh;
+}
+
+.carousel-indicators {
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  
+  #works-section .container ul {
+    text-align: center;
+  }
+
+  .bg-image {
+    height: 50vh;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4 {
+    height: auto;
+    margin: 5px;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .bg-image {
+    height: 60vh;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    font-size: 18px;
+  }
+
+  .bg-image {
+    height: 70vh;
+  }
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+  background-image: url(image/note.jpg);
+  height: 3000px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: justify;
+}
+
