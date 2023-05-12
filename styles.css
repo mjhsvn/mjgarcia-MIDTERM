@@ -1,6 +1,6 @@
 
 body {
-  background-image: url(image/48sv44jin6m71.gif);
+  background-image: url(48sv44jin6m71.gif);
   background-size: cover;
   scroll-behavior: smooth;
   min-height: 1000px;
@@ -13,7 +13,7 @@ body {
 }
 
 .card {
-  background-image: url(image/48sv44jin6m71.gif);
+  background-image: url(48sv44jin6m71.gif);
   animation: grow 1s ease-in-out both;
   display: flex;
   justify-content: center;
@@ -142,7 +142,7 @@ img {
 .card-2,
 .card-3,
 .card-4 {
-  background-image: url(image/note.jpg);
+  background-image: url(note.jpg);
   height: 3000px;
   margin-top: 10px;
   margin-left: 5px;
