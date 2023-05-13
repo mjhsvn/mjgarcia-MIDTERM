@@ -1,10 +1,9 @@
-
 body {
-  background-image: url(48sv44jin6m71.gif);
+  background-image: url(image/48sv44jin6m71.gif);
   background-size: cover;
   scroll-behavior: smooth;
-  min-height: 1000px;
-  font-size: 16px;
+  min-height: 100vh;
+  font-size: 1rem; /* changed from 16px */
 }
 
 .card-body {
@@ -13,7 +12,7 @@ body {
 }
 
 .card {
-  background-image: url(48sv44jin6m71.gif);
+  background-image: url(image/48sv44jin6m71.gif);
   animation: grow 1s ease-in-out both;
   display: flex;
   justify-content: center;
@@ -49,8 +48,9 @@ body {
 
 img {
   border-radius: 0%;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 10vh; /*changed from 10%*/
+  margin-bottom: 10vh; /*changed from 10%*/
+  width: 100%;
 }
 
 #nav-pills {
@@ -59,37 +59,35 @@ img {
   left: 20px;
   transform: translateY(-50%);
   z-index: 1;
-  background-color: #ffffff00;
-  padding: 10px;
+  background-color: transparent; /*changed from #ffffff00*/
+  padding: 1rem;
 }
 
 #nav-fill {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 1rem; /*changed from 10px*/
 }
 
+
 #about-section {
-  height: 250px;
-  margin-top: 10px;
-  margin-left: 5px;
-  margin-right: 5px;
+  height: auto;
+  padding: 1rem;
   text-align: justify;
 }
 
 #works-section {
-  height: 500px;
-  margin-top: 10px;
-  margin-left: 5px;
-  margin-right: 5px;
+  height: auto;
+  padding: 1rem;
 }
 
 #message-section {
-  height: 500px;
+  height: auto;
+  padding: 1rem;
 }
 
 .bg-image {
   background-size: cover;
-  height: 70vh;
+  height: 50vh; /* changed the default value */
 }
 
 .carousel-indicators {
@@ -98,7 +96,7 @@ img {
 
 @media screen and (max-width: 600px) {
   body {
-    font-size: 14px;
+    font-size: 0.875rem; /* changed from 14px */
   }
   
   #works-section .container ul {
@@ -106,7 +104,7 @@ img {
   }
 
   .bg-image {
-    height: 50vh;
+    height: 30vh; /* changed from 50vh */
   }
 
   .card-1,
@@ -114,27 +112,32 @@ img {
   .card-3,
   .card-4 {
     height: auto;
-    margin: 5px;
+    margin: 1rem; /* changed from 5px */
+  }
+
+  #nav-pills {
+    left: 10px;
+    padding: 0.5rem;
   }
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
   body {
-    font-size: 15px;
+    font-size: 0.9375rem; /* changed from 15px */
   }
 
   .bg-image {
-    height: 60vh;
+    height: 40vh; /* changed from 60vh */
   }
 }
 
 @media screen and (min-width: 769px) {
   body {
-    font-size: 18px;
+    font-size: 1.125rem; /* changed from 18px */
   }
 
   .bg-image {
-    height: 70vh;
+    height: 50vh; /* changed from 70vh */
   }
 }
 
@@ -142,11 +145,10 @@ img {
 .card-2,
 .card-3,
 .card-4 {
-  background-image: url(note.jpg);
-  height: 3000px;
-  margin-top: 10px;
-  margin-left: 5px;
-  margin-right: 5px;
+  background-image: url(image/note.jpg);
+  height: auto;
+  margin: 1rem;
+  padding: 1rem;
   text-align: justify;
 }
 
